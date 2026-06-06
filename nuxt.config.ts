@@ -47,5 +47,9 @@ export default defineNuxtConfig({
 
   css: ["~/assets/css/main.css"],
 
+  nitro: {
+    preset: "netlify",
+  },
+
   compatibilityDate: "2024-11-01",
 });
