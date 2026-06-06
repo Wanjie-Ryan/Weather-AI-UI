@@ -368,7 +368,7 @@ async function fetchUsage() {
   try {
     usage.value = await $fetch<any>("/api/usage");
   } catch {
-    // non-fatal
+    // non-fatals
   }
 }
 
