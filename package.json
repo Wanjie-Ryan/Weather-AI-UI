@@ -1,0 +1,21 @@
+{
+  "name": "weather-dashboard",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "nuxt": "^3.16.2"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "^1.7.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "vue-tsc": "^2.0.0"
+  }
+}
