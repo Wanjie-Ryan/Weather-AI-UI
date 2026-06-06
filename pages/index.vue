@@ -385,7 +385,7 @@ function applyWeatherData(raw: any) {
   isDay.value = new Date().getHours() >= 6 && new Date().getHours() < 20;
 }
 
-// ── Lifecycle 
+// ── Lifecycle
 onMounted(async () => {
   tickClock();
   clockTick = setInterval(tickClock, 1000);
@@ -444,7 +444,7 @@ onUnmounted(() => {
             :disabled="loading"
             @click="autoDetect"
           >
-            📍 Locate Me
+            📍 <span class="btn-locate-text">Locate Me</span>
           </button>
         </form>
       </nav>
@@ -578,6 +578,9 @@ onUnmounted(() => {
             </div>
           </div>
         </section>
+
+        <!-- Charts -->
+        <WeatherCharts :hourly="hourly" :daily="daily" :unit="unit" />
 
         <!-- 7-Day Forecast -->
         <section class="daily-section" v-if="daily.length">

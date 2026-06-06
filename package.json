@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "chart.js": "^4.5.1",
     "nuxt": "^3.16.2"
   },
   "devDependencies": {
